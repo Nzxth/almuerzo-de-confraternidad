@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="280" viewBox="0 0 480 280" fill="none">
+  <defs>
+    <linearGradient id="silk" x1="76" y1="-33" x2="337" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#879075"/><stop offset=".25" stop-color="#6b775a"/><stop offset=".59" stop-color="#546248"/><stop offset=".86" stop-color="#425440"/><stop offset="1" stop-color="#4c5942"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="15" y1="11" x2="455" y2="121" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a5a47c"/><stop offset=".18" stop-color="#e1d3a1"/><stop offset=".39" stop-color="#b3ad87"/><stop offset=".6" stop-color="#e8d49e"/><stop offset=".82" stop-color="#a29d71"/><stop offset="1" stop-color="#d8c594"/>
+    </linearGradient>
+    <pattern id="linen" patternUnits="userSpaceOnUse" width="8" height="9">
+      <path d="M0 .6h4m1 3.3h2M2.8 7h2" stroke="#efe5ca" stroke-opacity=".13" stroke-width=".65"/>
+      <path d="M2.2 2.2v2.2m4 2.7v.8" stroke="#263e30" stroke-opacity=".2" stroke-width=".55"/>
+    </pattern>
+    <path id="flap" d="M17 12h446q5.1 0 6.5 4.6L253.1 166q-8.3 5.4-13.1 5.4t-13.1-5.4L10.5 16.6Q11.9 12 17 12Z"/>
+    <path id="leaf" d="M0 0Q-3-7-12-9Q-8-1 0 0Z"/>
+    <g id="spray" stroke="url(#foil)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M63 28c16 0 31 6 44 15 10 7 20 15 33 17m-61-30c11 2 20 2 26-.3" stroke-width=".85"/>
+      <g stroke-width=".67" fill="#a9ae86" fill-opacity=".54">
+        <use href="#leaf" transform="translate(79 30) rotate(16) scale(.7)"/><use href="#leaf" transform="translate(87 33) rotate(-56) scale(.9)"/><use href="#leaf" transform="translate(99 38) rotate(25) scale(.84)"/><use href="#leaf" transform="translate(109 44) rotate(-43) scale(.83)"/><use href="#leaf" transform="translate(120 52) rotate(22) scale(.72)"/><use href="#leaf" transform="translate(130 57) rotate(-40) scale(.57)"/>
+      </g>
+      <path d="M100 30q6-1 7-6m-3 6 7 .4" stroke-width=".7"/><g fill="#cfbd8b" stroke-width=".6"><ellipse cx="107.6" cy="23" rx="2" ry="2.7" transform="rotate(32 107.6 23)"/><ellipse cx="112.5" cy="30.7" rx="1.9" ry="2.4" transform="rotate(-61 112.5 30.7)"/></g>
+    </g>
+  </defs>
+  <use href="#flap" fill="#192c22" transform="translate(0 2.3)" opacity=".55"/>
+  <use href="#flap" fill="url(#silk)" stroke="#868d6b" stroke-width="1.2"/>
+  <use href="#flap" fill="url(#linen)"/>
+  <path d="M13.5 17.3L228 165.3q7.5 5.1 12 5.1t12-5.1L466.5 17.3" stroke="url(#foil)" stroke-width="1.7"/>
+  <path d="M31 22.4l198.7 136.2q6.3 4.4 10.3 4.4t10.3-4.4L449 22.4" stroke="url(#foil)" stroke-width=".75" opacity=".82"/>
+  <path d="M40 24.4l187.2 128.2m25.6 0L440 24.4" stroke="#cad0aa" stroke-width=".65" opacity=".47" stroke-dasharray="1.7 3.2"/>
+  <path d="M19 18h442M44.4 21h99.3m192.6 0h99.3" stroke="url(#foil)" stroke-width=".8" opacity=".75"/>
+  <g opacity=".92"><use href="#spray"/><use href="#spray" transform="translate(480 0) scale(-1 1)"/></g>
+  <g stroke="url(#foil)" stroke-width=".85" opacity=".86">
+    <path d="M171 31h49q6 0 9-3.1 3.2-3.2 7 .4m8 0q3.8-3.6 7-.4 3 3.1 9 3.1h49"/>
+    <path d="M231.5 32.5q4.8 0 8.5 4.5 3.7-4.5 8.5-4.5m-10.8-3.2 2.3-3.9 2.3 3.9-2.3 3.9z"/>
+  </g>
+</svg>
