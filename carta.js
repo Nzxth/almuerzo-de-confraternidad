@@ -1,14 +1,14 @@
 (() => {
   const cover = document.querySelector('#portada');
   const letter = document.querySelector('#inicio');
-  const open = document.querySelector('#abrir-carta');
-  const replay = document.querySelector('#volver-al-sobre');
+  const open = document.querySelector('#abrir-pergamino');
+  const replay = document.querySelector('#volver-al-pergamino');
   const motion = document.querySelector('#motion');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   let fallback;
   const state = name => { document.body.dataset.letter = name; };
 
-  function closeEnvelope(moveFocus) {
+  function closeScroll(moveFocus) {
     clearTimeout(fallback);
     state('closed');
     letter.hidden = true;
@@ -32,7 +32,7 @@
     document.querySelector('#title').focus({preventScroll: true});
   }
 
-  function openEnvelope() {
+  function openScroll() {
     if (document.body.dataset.letter !== 'closed') return;
     cover.inert = true;
     letter.hidden = false;
@@ -49,8 +49,8 @@
   cover.addEventListener('animationend', event => {
     if (event.target === cover && event.animationName === 'lift-cover') finishOpening();
   });
-  open.addEventListener('click', openEnvelope);
-  replay.addEventListener('click', () => closeEnvelope(true));
+  open.addEventListener('click', openScroll);
+  replay.addEventListener('click', () => closeScroll(true));
   function setMotion(paused) {
     document.documentElement.classList.toggle('motion-enabled', !paused);
     document.body.classList.toggle('paused', paused);
@@ -64,5 +64,5 @@
   replay.hidden = false;
   motion.hidden = false;
   setMotion(reduced.matches);
-  closeEnvelope(false);
+  closeScroll(false);
 })();

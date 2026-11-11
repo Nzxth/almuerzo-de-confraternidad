@@ -1,14 +1,14 @@
 # Almuerzo de Confraternidad
 
-Invitación estática lista para GitHub Pages. Al entrar aparece un sobre de papel olivo con un sello dorado. Al tocar el sello o el botón «Abrir la carta», se levanta la solapa, sale la tarjeta y se muestra la invitación.
+Invitación estática lista para GitHub Pages. Al entrar aparece un pergamino marfil con lazo y sello dorados. Al tocar el sello o el botón «Desplegar la invitación», el pergamino se despliega suavemente y muestra la invitación.
 
 ## Publicación
 
-Descomprime el ZIP y sube todos los archivos HTML, CSS, JavaScript y SVG a la misma carpeta, en la raíz del repositorio. En GitHub, abre Settings → Pages, elige publicar desde la rama que contiene los archivos y la carpeta raíz. No requiere instalación ni compilación.
+Descomprime el ZIP y sube todos los archivos HTML, CSS, JavaScript, PNG y SVG a la misma carpeta, en la raíz del repositorio. En GitHub, abre Settings → Pages, elige publicar desde la rama que contiene los archivos y la carpeta raíz. No requiere instalación ni compilación.
 
 ## Lectura y animación
 
-«Pausar animación» detiene las hojas y las motas de luz. Con la animación en pausa, o si el dispositivo prefiere movimiento reducido, el sobre se abre al instante. Al final de la invitación se puede elegir «Volver al sobre». Si JavaScript no está disponible, la invitación se puede leer directamente.
+«Pausar animación» detiene las hojas y las motas de luz. Con la animación en pausa, o si el dispositivo prefiere movimiento reducido, el pergamino se despliega al instante. Al final de la invitación se puede elegir «Volver al pergamino». Si JavaScript no está disponible, la invitación se puede leer directamente.
 
 ## Datos del encuentro
 

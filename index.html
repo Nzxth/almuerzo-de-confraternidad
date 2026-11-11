@@ -24,21 +24,16 @@
   <section id="portada" class="letter-cover" aria-labelledby="cover-title" hidden>
     <div class="cover-pane">
       <div class="cover-heading">
-        <p class="postmark"><span aria-hidden="true"></span> CORRESPONDENCIA PERSONAL <span aria-hidden="true"></span></p>
-        <h1 id="cover-title">Una carta <em>para usted</em></h1>
+        <p class="postmark"><span aria-hidden="true"></span> UN ENCUENTRO ESPECIAL <span aria-hidden="true"></span></p>
+        <h1 id="cover-title">Una invitación <em>para usted</em></h1>
       </div>
-      <button class="envelope-trigger" type="button" id="abrir-carta" aria-label="Abrir la invitación al Almuerzo de Confraternidad" aria-controls="inicio">
-        <span class="envelope-scene" aria-hidden="true">
-          <span class="envelope-shadow"></span>
-          <span class="envelope">
-            <img class="envelope-back" src="sobre-reverso.svg" alt="" width="480" height="280">
-            <span class="paper-insert"><span class="paper-ornament">✦</span><span class="paper-kicker">UNA CORDIAL INVITACIÓN</span><span class="paper-title">Almuerzo de<br><i>Confraternidad</i></span></span>
-            <img class="envelope-pocket" src="sobre-bolsillo.svg" alt="" width="480" height="280">
-            <img class="envelope-flap" src="sobre-solapa.svg" alt="" width="480" height="280">
-            <img class="envelope-seal" src="sello.svg" alt="" width="100" height="100">
-          </span>
+      <button class="scroll-trigger" type="button" id="abrir-pergamino" aria-label="Desplegar la invitación al Almuerzo de Confraternidad" aria-controls="inicio">
+        <span class="scroll-scene" aria-hidden="true">
+          <span class="scroll-shadow"></span>
+          <span class="scroll-paper"><span class="scroll-paper-content"><span class="paper-ornament">✦</span><span class="paper-kicker">UNA CORDIAL INVITACIÓN</span><span class="paper-title">Almuerzo de<br><i>Confraternidad</i></span></span></span>
+          <img class="scroll-art" src="pergamino.png" alt="" width="2087" height="754" fetchpriority="high">
         </span>
-        <span class="open-caption">Abrir la carta <span aria-hidden="true">→</span></span>
+        <span class="open-caption">Desplegar la invitación <span aria-hidden="true">→</span></span>
       </button>
       <p class="cover-hint">Toque el sello para descubrir la invitación.</p>
       <div class="cover-imprint"><span>Caraz, Perú</span><span class="imprint-star" aria-hidden="true">✧</span><span>20 · XII · 2026</span></div>
@@ -68,11 +63,11 @@
         </section>
         <div class="actions"><button class="button primary" id="save-date"><svg aria-hidden="true"><use href="#calendar"/></svg>Agendar el encuentro <span aria-hidden="true">↗</span></button><a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Oro+Andino+Lodge+Caraz" target="_blank" rel="noopener noreferrer">Buscar ubicación <span aria-hidden="true">↗</span></a></div>
         <p class="welcome">¡Les esperamos!</p>
-        <p class="closing-message">Será un placer contar con su presencia<br>y compartir una tarde que recordaremos con cariño.</p>
+        <p class="closing-message">Será un placer contar con su presencia y compartir una tarde que recordaremos con cariño.</p>
       </div>
     </article>
     <footer><span>AMISTAD</span><i>✦</i><span>BUENOS MOMENTOS</span><i>✦</i><span>RECUERDOS</span></footer>
-    <div class="replay-row"><button type="button" id="volver-al-sobre" hidden>Volver al sobre <span aria-hidden="true">↶</span></button></div>
+    <div class="replay-row"><button type="button" id="volver-al-pergamino" hidden>Volver al pergamino <span aria-hidden="true">↶</span></button></div>
     <p class="toast" id="status" role="status"></p>
   </main>
   </div>
