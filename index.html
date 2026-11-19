@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101f2b">
+  <meta name="theme-color" content="#fafbf7">
   <meta name="description" content="Una invitación especial al Almuerzo de Confraternidad. 20 de diciembre de 2026, 1:00 p. m., Oro Andino Lodge, Caraz.">
   <title>Almuerzo de Confraternidad · Una invitación especial</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="garden.css">
   <link rel="stylesheet" href="carta.css">
+  <link rel="stylesheet" href="classic.css">
 </head>
 <body>
   <div class="garden" aria-hidden="true"></div>
@@ -33,7 +34,7 @@
           <span class="scroll-paper"><span class="scroll-paper-content"><span class="paper-ornament">✦</span><span class="paper-kicker">UNA CORDIAL INVITACIÓN</span><span class="paper-title">Almuerzo de<br><i>Confraternidad</i></span></span></span>
           <img class="scroll-art" src="pergamino.png" alt="" width="2087" height="754" fetchpriority="high">
         </span>
-        <span class="open-caption">Desplegar la invitación <span aria-hidden="true">→</span></span>
+        <span class="open-caption">Desplegar la invitación</span>
       </button>
       <p class="cover-hint">Toque el sello para descubrir la invitación.</p>
       <div class="cover-imprint"><span>Caraz, Perú</span><span class="imprint-star" aria-hidden="true">✧</span><span>20 · XII · 2026</span></div>
@@ -43,29 +44,47 @@
     <div class="overline"><span></span> EL PLACER DE VOLVER A ENCONTRARNOS <span></span></div>
     <article class="invitation" aria-labelledby="title">
       <div class="inner-border" aria-hidden="true"></div>
-      <svg class="botanical botanical-left" aria-hidden="true"><use href="#branch"/></svg>
-      <svg class="botanical botanical-right" aria-hidden="true"><use href="#branch"/></svg>
+      <img class="botanical botanical-left" src="botanical-corner.svg" width="300" height="390" alt="" aria-hidden="true">
+      <img class="botanical botanical-right" src="botanical-corner.svg" width="300" height="390" alt="" aria-hidden="true">
       <div class="card-content">
         <div class="crest" aria-hidden="true">❦<span>✦</span></div>
         <p class="eyebrow">UNA CORDIAL INVITACIÓN</p>
         <h1 id="title" tabindex="-1">Almuerzo de<br><em>Confraternidad</em></h1>
-        <div class="flourish" aria-hidden="true"><span></span>❦<span></span></div>
-        <p class="intro">Hay momentos que se disfrutan más<br class="desktop-break"> cuando los compartimos.</p>
+        <svg class="title-swoosh" viewBox="0 0 400 36" aria-hidden="true"><path d="M5 29C156-12 225-9 315 18C353 29 376 32 395 25C375 37 349 33 313 23C222 0 150 0 5 29Z" fill="currentColor"/></svg>
+        <div class="flourish" aria-hidden="true"><span></span><svg viewBox="0 0 70 35"><path d="M34 31C18 10 30-5 35 3S43 16 34 31ZM29 32C2 25 6 6 17 15ZM40 32C48 8 63 11 57 23Z" fill="currentColor"/></svg><span></span></div>
         <div class="invitation-message">
           <p class="message">Con especial alegría tengo el agrado de invitarle a nuestro Almuerzo de Confraternidad, una ocasión muy especial para compartir la alegría de culminar una hermosa etapa, celebrar los momentos vividos y agradecer a quienes han formado parte de este camino.</p>
           <p class="message">Será un encuentro para disfrutar de un delicioso almuerzo, compartir gratos momentos, disfrutar de buena música y bailar, compartir  sonrisas  creando bonitos  recuerdos. Que esta reunión  sea  una oportunidad para apreciar la alegría de estar juntos.</p>
         </div>
-        <p class="sentiment"><span aria-hidden="true">✦</span> La amistad florece cuando compartimos.</p>
+        <p class="sentiment">La amistad florece cuando compartimos.</p>
+        <svg class="sentiment-swoosh" viewBox="0 0 400 36" aria-hidden="true"><path d="M5 29C156-12 225-9 315 18C353 29 376 32 395 25C375 37 349 33 313 23C222 0 150 0 5 29Z" fill="currentColor"/></svg>
+      </div>
+      <span class="border-star" aria-hidden="true">✦</span>
+    </article>
+    <section class="occasion" aria-labelledby="occasion-title">
+        <p class="eyebrow">UN DÍA PARA RECORDAR</p>
+        <h2 id="occasion-title">Nos encontramos en Caraz</h2>
         <section class="details" aria-label="Detalles del almuerzo">
           <div class="detail"><svg aria-hidden="true"><use href="#calendar"/></svg><h2>FECHA</h2><p>20 de diciembre<span>2026</span></p></div>
-          <div class="detail"><svg aria-hidden="true"><use href="#clock"/></svg><h2>HORA</h2><p>1:00 p. m.<span>Una tarde para compartir</span></p></div>
+          <div class="detail"><svg aria-hidden="true"><use href="#clock"/></svg><h2>HORA</h2><p>1:00 p. m.<span>Hora de Perú</span></p></div>
           <div class="detail"><svg aria-hidden="true"><use href="#pin"/></svg><h2>LUGAR</h2><p>Oro Andino Lodge<span>Caraz</span></p></div>
         </section>
-        <div class="actions"><button class="button primary" id="save-date"><svg aria-hidden="true"><use href="#calendar"/></svg>Agendar el encuentro <span aria-hidden="true">↗</span></button><a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Oro+Andino+Lodge+Caraz" target="_blank" rel="noopener noreferrer">Buscar ubicación <span aria-hidden="true">↗</span></a></div>
+        <section class="countdown" data-countdown data-event-date="2026-12-20T13:00:00-05:00" aria-labelledby="countdown-title">
+          <p class="eyebrow" id="countdown-title">CADA VEZ MÁS CERCA</p>
+          <p class="countdown-message" data-countdown-message>Falta muy poco para compartir este día.</p>
+          <div class="countdown-grid" role="timer" aria-live="off" aria-label="Tiempo restante para el almuerzo">
+            <div class="countdown-unit"><span class="countdown-value" data-countdown-days>—</span><span class="countdown-label">Días</span></div>
+            <div class="countdown-unit"><span class="countdown-value" data-countdown-hours>—</span><span class="countdown-label">Horas</span></div>
+            <div class="countdown-unit"><span class="countdown-value" data-countdown-minutes>—</span><span class="countdown-label">Minutos</span></div>
+            <div class="countdown-unit"><span class="countdown-value" data-countdown-seconds>—</span><span class="countdown-label">Segundos</span></div>
+          </div>
+          <p class="countdown-date"><time datetime="2026-12-20T13:00:00-05:00">20 de diciembre de 2026 · 1:00 p. m.</time><span>Hora de Perú</span></p>
+          <noscript><p>Activa JavaScript para ver la cuenta regresiva en vivo.</p></noscript>
+        </section>
+        <div class="actions"><button class="button primary" id="save-date"><svg aria-hidden="true"><use href="#calendar"/></svg>Agendar el encuentro</button><a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Oro+Andino+Lodge+Caraz" target="_blank" rel="noopener noreferrer">Buscar ubicación</a></div>
         <p class="welcome">¡Les esperamos!</p>
         <p class="closing-message">Será un placer contar con su presencia y compartir una tarde que recordaremos con cariño.</p>
-      </div>
-    </article>
+    </section>
     <footer><span>AMISTAD</span><i>✦</i><span>BUENOS MOMENTOS</span><i>✦</i><span>RECUERDOS</span></footer>
     <div class="replay-row"><button type="button" id="volver-al-pergamino" hidden>Volver al pergamino <span aria-hidden="true">↶</span></button></div>
     <p class="toast" id="status" role="status"></p>
@@ -74,5 +93,6 @@
   <script src="script.js"></script>
   <script src="carta.js"></script>
   <script src="garden.js"></script>
+  <script src="countdown.js"></script>
 </body>
 </html>
